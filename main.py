@@ -6,4 +6,4 @@ spark = SparkSession \
     .appName("SimpleApp") \
     .getOrCreate()
 
-print(spark)
+spark.sql('SELECT current_date()').show()
